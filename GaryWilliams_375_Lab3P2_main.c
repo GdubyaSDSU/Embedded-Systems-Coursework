@@ -1,7 +1,20 @@
-/*	Gary Williams
- *	COMPE 375 - 01
- *	Lab 3 P2  Due: 2/17/17
+/*  Gary Williams
+ *  COMPE 375 - 01
+ *  Lab 3 P2  Due: 2/17/17
  *
+ *  Overview:
+ *    For the second part of the lab, we were to implement the same increasing/decreasing
+ *  duty cycle powering the LED when the button is pressed/released but without the use of
+ *  the delay function. Instead we were directed to use a timer on the controller and 
+ *  either the CTC (Clear Timer on Compare) or Fast PWM (Pulse Width Modulation) modes to
+ *  accomplish this task. After the use of CTC mode was re-explained during review for the
+ *  midterm, I implemented that mode and was able to get the results I wanted. At first it
+ *  looked a little off; the brighten and dim functions were taking longer than I expected.
+ *  I initially had defined F_CPU in a #ifndef block after the include statements and when
+ *  I paid attention to the compilation warnings, I realized that the CPU freq was being 
+ *  defined as 10MHz and then not changed because of my #ifndef block. I moved the 
+ *  declaration and just declared it and the timing was much better and looked to work at 
+ *  the same as the previous implementation using delays.
  */
 #define  F_CPU 16000000UL
 
