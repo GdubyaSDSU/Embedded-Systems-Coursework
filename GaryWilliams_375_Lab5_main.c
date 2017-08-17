@@ -1,6 +1,17 @@
-/*	Gary Williams
- *	COMPE 375-01
- *	Lab 5 Due: 3/3/17
+/*  Gary Williams
+ *  COMPE 375-01
+ *  Lab 5 Due: 3/3/17
+ *
+ *  Overview:
+ *    For this laboratory assignment we were to scan the 4x4 keyboard we were given and
+ *  output the character that was pressed. The way the keyboard is set up, we output a 
+ *  signal on the rows and read the signal in from the columns. One at a time, we go 
+ *  through the rows and check the columns to see which pin has dropped to low to 
+ *  indicate a button press. Because we know which row and column we are in, I called a
+ *  2D array with the characters in the order on the keypad for output.  We used the 
+ *  USART serial port to output the character and used the terminal within Atmel Studio
+ *  to view the results.
+ *
  */
 #define F_CPU 16000000UL
 #define BAUDRATE ((F_CPU)/(ubrr*16UL)-1)
