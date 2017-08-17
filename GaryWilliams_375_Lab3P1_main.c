@@ -1,7 +1,17 @@
-/*	Gary Williams
- *	COMPE 375 - 01
- *	Lab 3  Due: 2/17/17
+/*  Gary Williams
+ *  COMPE 375 - 01
+ *  Lab 3  Due: 2/17/17
  *
+ *  Overview:
+ *    For this laboratory assignment we were to generate a PWN waveform to
+ *  drive the LED so that when the button is pressed, the duty cycle increases
+ *  from 0% to 100% and decreases back to 0% when the button is released. For 
+ *  the first part of this lab, we were to use the built in delay functionality
+ *  to generate the pulse variances. The hardest part about using the built in
+ *  delay is that it would not take a variable as an argument. So a separate
+ *  delay function was made and just called the delay as many times as 
+ *  specified. It seems like this method would have unnecessary overhead, but
+ *  it actually worked quite well and the light up and light down looked smooth.
  */
 #define  F_CPU 16000000UL
 
