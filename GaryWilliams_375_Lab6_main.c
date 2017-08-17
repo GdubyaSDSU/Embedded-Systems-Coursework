@@ -1,6 +1,16 @@
-/*	Gary Williams
- *	COMPE 375-01
- *	Lab 6 Due: 3/10/17
+/*  Gary Williams
+ *  COMPE 375-01
+ *  Lab 6 Due: 3/10/17
+ *
+ *  Overview:
+ *    For this laboratory assignment we used the same keypad as last lab but this
+ *  time to make music tones and output them on a port that was connected to audio
+ *  cable. We varied the frequency accordingly to what button on the keypad was 
+ *  pressed. Initially, my code was truncated a division and I wasn't getting 
+ *  varied tones until I divided by a float, then I got the variation that I 
+ *  needed. I re-used my delay function from Lab 3 and used a 50% duty cycle on 
+ *  the output frequency.
+ *
  */
 #define F_CPU 16000000UL
 #define BAUDRATE ((F_CPU)/(ubrr*16UL)-1)
