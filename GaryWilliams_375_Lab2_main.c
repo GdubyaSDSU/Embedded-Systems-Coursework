@@ -2,9 +2,16 @@
  * COMPE 375 - 01
  * Lab 2  Due: 2/10/17
  */
-/*
- * Include header files for all drivers that have been imported from
- * Atmel Software Framework (ASF).
+/* Overview:
+ * For this laboratory assignment we expanded the blinking LED functionality of Lab 1 and
+ * made the Atmel AVR Xplained Mini XMEGA328PB board interpret a string into Morse code 
+ * using the LED. The instructions indicated that main() should call a child function, 
+ * passing it a string, and that child function would blink the board's LED to represent 
+ * the characters of the string. The string was our full name followed by RedID.  Helper
+ * functions were used for the specific dot, dash, and space characters that make up Morse
+ * code. The program ran on an endless loop with a significant pause between sessions to 
+ * show the end of one and the beginning of the next. The program works as intended. 
+ * Coupled with the homework, this laboratory shows the purpose of the DDR register. 
  */
 /*
  * Support and FAQ: visit <a href="http://www.atmel.com/design-support/">Atmel Support</a>
