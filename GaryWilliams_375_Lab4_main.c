@@ -1,6 +1,14 @@
-/*	Gary Williams
- *	COMPE 375-01
- *	Lab 4 Due: 2/24/17
+/*  Gary Williams
+ *  COMPE 375-01
+ *  Lab 4 Due: 2/24/17
+ *  
+ *  Overview:
+ *    For this laboratory assignment we were required to transmit the characters of our RedID
+ *  through the USART port on the ATmega328PB. We were also required us to set the baud rate
+ *  to 9600 and to set the data packet length to 8 data bits and 1 stop bit. After 
+ *  transmitting the characters of our ID, we were to send a carriage return followed by a 
+ *  linefeed and then wait 500 milliseconds before sending the string out again.
+ *
  */
 #define F_CPU 16000000UL
 
